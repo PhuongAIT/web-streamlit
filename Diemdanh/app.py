@@ -19,7 +19,7 @@ def run_app1():
     import pickle
     from keras.utils import img_to_array
     import sys
-    sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh')
+    sys.path.append('web-streamlit/Diemdanh')
     from Diemdanh import facenet_architecture
     #from facenet_architecture import InceptionResNetV2
     from Diemdanh import create_embedding
@@ -29,11 +29,11 @@ def run_app1():
 
     # Load model và classifier
     # facenet = InceptionResNetV2()
-    # path = "D:/NCKH2023-2024/Monitoring Student/Streamlit/Attentdance/MTCNN/model/facenet_keras_weights.h5"
+    # path = "web-streamlit/Diemdanh/model/facenet_keras_weights.h5"
     # facenet.load_weights(path)
 
     name_list = ['22070018', '22070154', '22070156', '22070167', '22070277']
-    # file_name = "D:/NCKH2023-2024/Monitoring Student/Streamlit/Attentdance/MTCNN/model/classify.sav"
+    # file_name = "web-streamlit/Diemdanh/model/classify.sav"
     # loaded_model = pickle.load(open(file_name, "rb"))
 
     # MTCNN detector
@@ -47,9 +47,9 @@ def run_app1():
     @st.cache_resource
     def load_model_and_classifier():
         facenet = facenet_architecture.InceptionResNetV2()
-        path = "D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh/model/facenet_keras_weights.h5"
+        path = "web-streamlit/Diemdanh/model/facenet_keras_weights.h5"
         facenet.load_weights(path)
-        file_name = "D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh/model/classify.sav"
+        file_name = "web-streamlit/Diemdanh/model/classify.sav"
         loaded_model = pickle.load(open(file_name, "rb"))
         return facenet, loaded_model
 
@@ -158,7 +158,7 @@ def run_app1():
     #st.sidebar.header("Let's check attendance with us!!")
     st.sidebar.header("WELCOME TO OUR RESEARCH!")
     # Load your image
-    image = open('D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh/background/School-Attendance-Automation_1.png', "rb").read()  # Replace "class.jpg" with your image file path
+    image = open('web-streamlit/Diemdanh/background/School-Attendance-Automation_1.png', "rb").read()  # Replace "class.jpg" with your image file path
 
     st.sidebar.header("Let's check attendance with us!!")
     # Display the image in the sidebar below the header
@@ -196,7 +196,7 @@ def run_app1():
             if st.button("Stop Video"):
                 video_active = False
     elif option == "Automatic Attendance Excel":
-        st.image("D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh/Exceldiemdanh.png", caption="Automatic check attendance into Excel file")
+        st.image("web-streamlit/Diemdanh/Exceldiemdanh.png", caption="Automatic check attendance into Excel file")
     else:
         st.error("Please select a valid choice!")
     
