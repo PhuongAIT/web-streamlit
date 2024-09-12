@@ -13,10 +13,10 @@
 # import streamlit as st
 # Local Modules
 
-import sys
-sys.path.append('web-streamlit/YOLO')
-from YOLO import settings
-from YOLO import helper
+# import sys
+# sys.path.append('web-streamlit/YOLO')
+# from YOLO import settings
+# from YOLO import helper
 
 
 
@@ -32,7 +32,7 @@ def run_app2():
     import streamlit as st
     # Local Modules
     
-    import sys
+    # import sys
     # sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
     # from YOLO import settings
     # from YOLO import helper
