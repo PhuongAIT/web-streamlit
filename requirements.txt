@@ -79,10 +79,6 @@
 # tzdata==2024.1
 # urllib3==2.2.1
 # watchdog==4.0.0
-
-
-
-
 streamlit==1.32.2
 ultralytics==8.1.30
 numpy==1.26.4
