@@ -84,7 +84,9 @@ streamlit==1.32.2
 ultralytics==8.1.30
 numpy==1.26.4
 torch==2.2.1
-opencv-python==4.9.0.80
+#opencv-python==4.9.0.80
+opencv-python-headless==4.9.0.80
+
 
 scikit-learn==1.2.2  # Latest version compatible with streamlit and numpy
 tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
