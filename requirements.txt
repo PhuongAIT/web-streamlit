@@ -10,6 +10,13 @@ streamlit==1.32.2
 altair==5.2.0
 pandas==2.2.1
 numpy==1.26.4
+# <<<<<<< HEAD
+# =======
+torch==2.2.1
+#opencv-python==4.9.0.80
+opencv-python-headless==4.9.0.80
+# 
+# >>>>>>> 329dc6f9c50b6bd19e52f52631a5df395f09c0f8
 
 # Machine Learning and Computer Vision libraries
 opencv-python==4.9.0.80  # Latest version of OpenCV for compatibility
