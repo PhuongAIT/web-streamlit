@@ -1,5 +1,5 @@
 import sys
-sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/Diemdanh')
+sys.path.append('web-streamlit/Diemdanh')
 from Diemdanh.preprocessing import *
 from Diemdanh import facenet_architecture
 #from facenet_architecture import InceptionResNetV2
