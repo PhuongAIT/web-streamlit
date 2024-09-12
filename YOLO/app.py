@@ -32,14 +32,14 @@ def run_app2():
     import streamlit as st
     # Local Modules
     
-    import sys
+    # import sys
     # sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
     # from YOLO import settings
     # from YOLO import helper
     # import YOLO.settings
     # import YOLO.helper
-    import settings
-    import helper
+    # import settings
+    # import helper
     #import test_videos.py
 
 
