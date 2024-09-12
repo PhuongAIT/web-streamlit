@@ -13,10 +13,10 @@
 # import streamlit as st
 # Local Modules
 
-# import sys
-# sys.path.append('web-streamlit/YOLO')
-# from YOLO import settings
-# from YOLO import helper
+import sys
+sys.path.append('web-streamlit/YOLO')
+from YOLO import settings
+from YOLO import helper
 
 
 
@@ -38,8 +38,9 @@ def run_app2():
     # from YOLO import helper
     # import YOLO.settings
     # import YOLO.helper
-    import settings
-    import helper
+    
+    # import settings
+    # import helper
     #import test_videos.py
 
 
