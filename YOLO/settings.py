@@ -49,9 +49,9 @@ VIDEOS_DICT = {
     'video_3': VIDEO_DIR / 'video_3.mp4',
     'video_4': VIDEO_DIR / 'video_4.mp4',
     'video_5': VIDEO_DIR / 'video_5.mp4',
-    'video_6': VIDEO_DIR / 'video_6.mp4',
-    'video_7': VIDEO_DIR / 'video_7.mp4',
-    'video_8': VIDEO_DIR / 'video_8.mp4',
+    # 'video_6': VIDEO_DIR / 'video_6.mp4',
+    # 'video_7': VIDEO_DIR / 'video_7.mp4',
+    # 'video_8': VIDEO_DIR / 'video_8.mp4',
     #'video_9': VIDEO_DIR / 'video_9.mp4',
 }
 
