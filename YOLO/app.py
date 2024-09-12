@@ -6,15 +6,15 @@
 
 
    # Python In-built packages
-from pathlib import Path
-import PIL
+# from pathlib import Path
+# import PIL
 
-# External packages
-import streamlit as st
+# # External packages
+# import streamlit as st
 # Local Modules
 
 import sys
-sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
+sys.path.append('web-streamlit/YOLO')
 from YOLO import settings
 from YOLO import helper
 
@@ -33,13 +33,13 @@ def run_app2():
     # Local Modules
     
     import sys
-    sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
-    from YOLO import settings
-    from YOLO import helper
+    # sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
+    # from YOLO import settings
+    # from YOLO import helper
     # import YOLO.settings
     # import YOLO.helper
-    # import settings
-    # import helper
+    import settings
+    import helper
     #import test_videos.py
 
 
@@ -68,7 +68,7 @@ def run_app2():
     # Sidebar
     st.sidebar.header("WELCOME TO OUR RESEARCH!")
     # Load your image
-    image = open('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO/class.jpg', "rb").read()  # Replace "class.jpg" with your image file path
+    image = open('class.jpg', "rb").read()  # Replace "class.jpg" with your image file path
 
     # Display the image in the sidebar below the header
     st.sidebar.image(image, use_column_width=True)
@@ -160,9 +160,9 @@ def run_app2():
 
     result=st.sidebar.radio("RESULTS: ",['TRAINING','TEST_VIDEO'])
     if result == 'TRAINING':
-        st.image("D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO/result_training.png", caption="This is result of training YOLOv8 models!")
+        st.image("result_training.png", caption="This is result of training YOLOv8 models!")
     elif result == 'TEST_VIDEO':
-        st.image("D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO/Bieudohanhvi.jpg", caption="This is result of test video in the class with 5 minutes!")
+        st.image("Bieudohanhvi.jpg", caption="This is result of test video in the class with 5 minutes!")
     else:
         st.error("Please select a valid choice!")
 

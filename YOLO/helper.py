@@ -4,7 +4,7 @@ import streamlit as st
 import cv2
 from pytube import YouTube
 import sys
-sys.path.append('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
+sys.path.append('web-streamlit/YOLO')
 from YOLO import settings
 
 
