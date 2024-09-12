@@ -1,8 +1,0 @@
-numpy>=1.20
-opencv-python==4.5.1.48
-Tensorflow==2.9.0
-numpy
-opencv-python
-mtcnn
-scikit-learn
-
