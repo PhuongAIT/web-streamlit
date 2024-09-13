@@ -147,9 +147,9 @@ def run_app2():
         helper.play_stored_video(#confidence,
                                 model)
     # test_videos.process(img,results)
-    elif source_radio == settings.WEBCAM:
-        helper.play_webcam(#confidence, 
-                        model)
+    # elif source_radio == settings.WEBCAM:
+    #     helper.play_webcam(#confidence, 
+    #                     model)
         #test_videos.process(img,results)
         
     elif source_radio == settings.YOUTUBE:
