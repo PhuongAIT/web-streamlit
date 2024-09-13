@@ -161,9 +161,9 @@ def run_app2():
 
     result=st.sidebar.radio("RESULTS: ",['TRAINING','TEST_VIDEO'])
     if result == 'TRAINING':
-        st.image("result_training.png", caption="This is result of training YOLOv8 models!")
+        st.image('YOLO/result_training.png', caption="This is result of training YOLOv8 models!")
     elif result == 'TEST_VIDEO':
-        st.image("Bieudohanhvi.jpg", caption="This is result of test video in the class with 5 minutes!")
+        st.image('YOLO/Bieudohanhvi.jpg', caption="This is result of test video in the class with 5 minutes!")
     else:
         st.error("Please select a valid choice!")
 
