@@ -11,8 +11,8 @@ import sys
 sys.path.append("MTCNN")
 
 #Define url
-root_url = r"web-streamlit/Diemdanh" #Change root_url according to computer directory
-root_raw_img = r"web-streamlit/Diemdanh/raw_images"
+root_url = r"Diemdanh" #Change root_url according to computer directory
+root_raw_img = r"Diemdanh/raw_images"
 detector = MTCNN()
 name_list = ['22070018','22070154','22070156','22070167','22070277']
 
