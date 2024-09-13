@@ -1,14 +1,4 @@
-# def run_app1():
-#     from unicodedata import name
-#     from tensorflow import keras
-#     from keras.preprocessing import image
-#     from PIL import Image
-#     import numpy as np
-#     import base64
-#     import warnings
-#     warnings.filterwarnings('ignore')
-#     from keras.utils import img_to_array, load_img
-#     from MTCNN.preprocessing import *
+
 def run_app1():  
     import cv2
     import streamlit as st
@@ -27,14 +17,8 @@ def run_app1():
     import tempfile
     
 
-    # Load model và classifier
-    # facenet = InceptionResNetV2()
-    # path = "web-streamlit/Diemdanh/model/facenet_keras_weights.h5"
-    # facenet.load_weights(path)
-
     name_list = ['22070018', '22070154', '22070156', '22070167', '22070277']
-    # file_name = "web-streamlit/Diemdanh/model/classify.sav"
-    # loaded_model = pickle.load(open(file_name, "rb"))
+   
 
     # MTCNN detector
     detector = MTCNN()
@@ -47,9 +31,9 @@ def run_app1():
     @st.cache_resource
     def load_model_and_classifier():
         facenet = facenet_architecture.InceptionResNetV2()
-        path = "web-streamlit/Diemdanh/model/facenet_keras_weights.h5"
+        path = "Diemdanh/model/facenet_keras.h5"
         facenet.load_weights(path)
-        file_name = "web-streamlit/Diemdanh/model/classify.sav"
+        file_name = "Diemdanh/model/classify.sav"
         loaded_model = pickle.load(open(file_name, "rb"))
         return facenet, loaded_model
 
@@ -158,7 +142,7 @@ def run_app1():
     #st.sidebar.header("Let's check attendance with us!!")
     st.sidebar.header("WELCOME TO OUR RESEARCH!")
     # Load your image
-    image = open('web-streamlit/Diemdanh/background/School-Attendance-Automation_1.png', "rb").read()  # Replace "class.jpg" with your image file path
+    image = open('Diemdanh/background/School-Attendance-Automation_1.png', "rb").read()  # Replace "class.jpg" with your image file path
 
     st.sidebar.header("Let's check attendance with us!!")
     # Display the image in the sidebar below the header
@@ -196,7 +180,7 @@ def run_app1():
             if st.button("Stop Video"):
                 video_active = False
     elif option == "Automatic Attendance Excel":
-        st.image("web-streamlit/Diemdanh/Exceldiemdanh.png", caption="Automatic check attendance into Excel file")
+        st.image("Diemdanh/Exceldiemdanh.png", caption="Automatic check attendance into Excel file")
     else:
         st.error("Please select a valid choice!")
     
