@@ -350,7 +350,7 @@ def run_app1():
     st.title("Face Recognition From Image, Video, and Webcam with MTCNN and FaceNet")
     st.radio("Selected Task: ", ['Attendance'])
 
-    option = st.sidebar.radio("Choose Function", ["Image", "Webcam", "Video", "Automatic Attendance Excel"])
+    option = st.sidebar.radio("Choose Function", ["Image", "Video", "Automatic Attendance Excel"])
 
     if option == "Image":
         uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
