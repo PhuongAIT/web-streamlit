@@ -5,10 +5,10 @@ from Diemdanh import facenet_architecture
 #from facenet_architecture import InceptionResNetV2
 import numpy as np
 facenet = facenet_architecture.InceptionResNetV2()
-path = "web-streamlit/Diemdanh/model/facenet_keras_weights.h5"
+path = "Diemdanh/model/facenet_keras_weights.h5"
 facenet.load_weights(path)
 
-data = np.load('web-streamlit/Diemdanh/model/faces-dataset.npz',allow_pickle=True)
+data = np.load('Diemdanh/model/faces-dataset.npz',allow_pickle=True)
 train_X, train_y, test_X, test_y = data['a'], data['b'], data['c'], data['d']
 
 # get the face embedding for one face
@@ -41,7 +41,7 @@ def convert_embedding(train_X, test_X):
 
 if __name__ == "__main__":
     embed_trainX, embed_testX = convert_embedding(train_X,test_X)
-    np.savez_compressed("web-streamlit/Diemdanh/model/faces-dataset.npz", a = embed_trainX, b = train_y, c = embed_testX, d = test_y)
+    np.savez_compressed("Diemdanh/model/faces-dataset.npz", a = embed_trainX, b = train_y, c = embed_testX, d = test_y)
     print("Saved Embedding....")
     print("Embed train X: {}".format(embed_testX.shape))
     print("Train_y shape: {}".format(train_y.shape))
