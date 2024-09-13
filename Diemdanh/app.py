@@ -178,7 +178,7 @@ def run_app1():
             
             if st.button("Stop Video"):
                 video_active = False
-    elif option == "Automatic Attendance Excel":
+    elif option == "Result: Automatic Attendance Excel":
         st.image('Diemdanh/Exceldiemdanh.png', caption="Automatic check attendance into Excel file")
     else:
         st.error("Please select a valid choice!")
