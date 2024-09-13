@@ -260,34 +260,34 @@ def run_app1():
         return yhat_prob, class_predict, info
 
     # Webcam recognition function
-    def recognize_from_webcam():
-        global webcam_active
-        cap = cv2.VideoCapture(0)
-        stframe = st.empty()
+    # def recognize_from_webcam():
+    #     global webcam_active
+    #     cap = cv2.VideoCapture(0)
+    #     stframe = st.empty()
 
-        while webcam_active and cap.isOpened():
-            ret, frame = cap.read()
-            if not ret:
-                break
+    #     while webcam_active and cap.isOpened():
+    #         ret, frame = cap.read()
+    #         if not ret:
+    #             break
 
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            frame, embed_vector, box = process_frame(frame_rgb)
+    #         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    #         frame, embed_vector, box = process_frame(frame_rgb)
 
-            if embed_vector is not None:
-                prob, pred_class, student_info = predict(loaded_model, embed_vector)
-                x1, y1, x2, y2 = box
-                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+    #         if embed_vector is not None:
+    #             prob, pred_class, student_info = predict(loaded_model, embed_vector)
+    #             x1, y1, x2, y2 = box
+    #             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 
-                # Print student information: ID, name, class, and phone
-                info_text = f'{pred_class}: {prob:.2f}\nName: {student_info["name"]}\nClass: {student_info["class"]}\nEmail: {student_info["email"]}'
-                y_offset = 20
-                for i, line in enumerate(info_text.split('\n')):
-                    cv2.putText(frame, line, (x1, y1 - y_offset - (i * 20)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+    #             # Print student information: ID, name, class, and phone
+    #             info_text = f'{pred_class}: {prob:.2f}\nName: {student_info["name"]}\nClass: {student_info["class"]}\nEmail: {student_info["email"]}'
+    #             y_offset = 20
+    #             for i, line in enumerate(info_text.split('\n')):
+    #                 cv2.putText(frame, line, (x1, y1 - y_offset - (i * 20)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
-            frame = Image.fromarray(frame)
-            stframe.image(frame, caption="Video Stream", width=380)
+    #         frame = Image.fromarray(frame)
+    #         stframe.image(frame, caption="Video Stream", width=380)
 
-        cap.release()
+    #     cap.release()
 
     # Function to recognize from video
     def recognize_from_video(video_path):
@@ -340,7 +340,7 @@ def run_app1():
         st.image(frame, caption="Processed Image", channels="RGB", width=380)
 
     # Streamlit App
-    global webcam_active, video_active
+    global video_active
 
     # Sidebar
     st.sidebar.header("WELCOME TO OUR RESEARCH!")
@@ -357,13 +357,13 @@ def run_app1():
         if uploaded_file is not None:
             recognize_from_image(uploaded_file)
 
-    elif option == "Webcam":
-        if st.button("Start Webcam"):
-            webcam_active = True
-            recognize_from_webcam()
+    # elif option == "Webcam":
+    #     if st.button("Start Webcam"):
+    #         webcam_active = True
+    #         recognize_from_webcam()
 
-        if st.button("Stop Webcam"):
-            webcam_active = False
+    #     if st.button("Stop Webcam"):
+    #         webcam_active = False
 
     elif option == "Video":
         video_file = st.file_uploader("Upload a video", type=["mp4", "avi"])
