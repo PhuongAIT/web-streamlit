@@ -18,7 +18,7 @@ VIDEO = 'Video'
 #RTSP = 'RTSP'
 YOUTUBE = 'YouTube'
 
-SOURCES_LIST = [IMAGE, VIDEO, WEBCAM, YOUTUBE]
+SOURCES_LIST = [IMAGE, VIDEO, YOUTUBE]
 
 # Images config
 IMAGES_DIR = ROOT / 'images'
