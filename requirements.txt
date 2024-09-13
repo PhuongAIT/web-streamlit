@@ -20,7 +20,8 @@ opencv-python-headless==4.9.0.80
 
 # Machine Learning and Computer Vision libraries
 opencv-python==4.9.0.80  # Latest version of OpenCV for compatibility
-scikit-learn==1.2.2  # Latest version compatible with streamlit and numpy
+scikit-learn  # Latest version compatible with streamlit and numpy
+Cython==0.29.24
 tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
 
 # Face recognition and YOLO libraries
@@ -86,6 +87,8 @@ typing_extensions==4.10.0
 tzdata==2024.1
 urllib3==2.2.1
 watchdog==4.0.0
+
+
 
 # streamlit==1.32.2
 # ultralytics==8.1.30
