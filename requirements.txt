@@ -1,35 +1,13 @@
-# streamlit==1.29.0
-# pandas>=1.3.0
-# scikit-learn
-# altair>=4.0
-
-
-
-
-# Streamlit dependencies
 streamlit==1.32.2
-altair==5.2.0
 pandas==2.2.1
 numpy==1.26.4
-# <<<<<<< HEAD
-# =======
 torch==2.2.1
-#opencv-python==4.9.0.80
 opencv-python-headless==4.9.0.80
-# 
-# >>>>>>> 329dc6f9c50b6bd19e52f52631a5df395f09c0f8
-
-# Machine Learning and Computer Vision libraries
-opencv-python==4.9.0.80  # Latest version of OpenCV for compatibility
-scikit-learn==1.0.2  # Latest version compatible with streamlit and numpy
+scikit-learn==1.0.2
 Cython==0.29.24
-#tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
-
 tensorflow==2.16.1
-
-# Face recognition and YOLO libraries
-mtcnn==0.1.1  # No specific version given, this is a stable version for face detection
-ultralytics==8.1.30  # Required for YOLO
+mtcnn==0.1.1
+ultralytics==8.1.30
 
 # Supporting libraries
 attrs==23.2.0
@@ -81,7 +59,6 @@ tenacity==8.2.3
 thop==0.1.1.post2209072238
 toml==0.10.2
 toolz==0.12.1
-torch==2.2.1
 torchvision==0.17.1
 tornado==6.4
 tqdm==4.66.2
@@ -90,14 +67,3 @@ typing_extensions==4.10.0
 tzdata==2024.1
 urllib3==2.2.1
 watchdog==4.0.0
-
-
-
-# streamlit==1.32.2
-# ultralytics==8.1.30
-# numpy==1.26.4
-# torch==2.2.1
-# opencv-python==4.9.0.80
-
-# scikit-learn==1.2.2  # Latest version compatible with streamlit and numpy
-# tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
