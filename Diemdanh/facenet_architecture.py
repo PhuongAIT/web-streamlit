@@ -1,5 +1,13 @@
 import tensorflow as tf
-from keras.layers import Conv2D, Activation, Input, Add, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization, Concatenate, Lambda, add, GlobalAveragePooling2D, Convolution2D, LocallyConnected2D, ZeroPadding2D, concatenate, AveragePooling2D
+#from keras.layers import Conv2D, Activation, Input, Add, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization, Concatenate, Lambda, add, GlobalAveragePooling2D, Convolution2D, LocallyConnected2D, ZeroPadding2D, concatenate, AveragePooling2D
+#from tensorflow.keras.layers import LocallyConnected2D, Conv2D, Activation, Input, Add, MaxPooling2D
+from tensorflow.keras.layers import (
+    Conv2D, Activation, Input, Add, MaxPooling2D, Flatten, Dense, Dropout,
+    BatchNormalization, Concatenate, Lambda, add, GlobalAveragePooling2D,
+    Convolution2D, LocallyConnected2D, ZeroPadding2D, concatenate,
+    AveragePooling2D
+)
+
 from keras.models import Model, Sequential
 from keras import backend as K
 
