@@ -69,7 +69,7 @@ def run_app2():
     # Sidebar
     st.sidebar.header("WELCOME TO OUR RESEARCH!")
     # Load your image
-    image = open('class.jpg', "rb").read()  # Replace "class.jpg" with your image file path
+    image = open('YOLO/class.jpg', "rb").read()  # Replace "class.jpg" with your image file path
 
     # Display the image in the sidebar below the header
     st.sidebar.image(image, use_column_width=True)
