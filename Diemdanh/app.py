@@ -87,7 +87,7 @@ def run_app1():
                             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
             
             frame = Image.fromarray(frame)
-            stframe.image(frame, caption="Video Stream", use_column_width=True)
+            stframe.image(frame, caption="Video Stream", width=300)
         
         cap.release()
 
@@ -113,7 +113,7 @@ def run_app1():
                             cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
             
             frame = Image.fromarray(frame)
-            stframe.image(frame, caption="Video Stream", use_column_width=True)
+            stframe.image(frame, caption="Video Stream", width=300)
         
         cap.release()
 
@@ -131,7 +131,7 @@ def run_app1():
             frame = cv2.putText(frame, f'{pred_class}: {prob:.2f}', (x1, y1 - 10),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
         
-        st.image(frame, caption="Processed Image", channels="RGB")
+        st.image(frame, caption="Processed Image", channels="RGB",width=300)
 
     # Streamlit App
     # def main():
