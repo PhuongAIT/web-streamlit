@@ -7,7 +7,7 @@ def run_app1():
     from mtcnn import MTCNN 
     from PIL import Image
     import pickle
-    from tensorflow.keras.utils import img_to_array
+    from keras.utils import img_to_array
     # import sys
     # sys.path.append('web-streamlit/Diemdanh')
     from Diemdanh import facenet_architecture
