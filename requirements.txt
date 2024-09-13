@@ -77,3 +77,5 @@ urllib3==2.2.1
 watchdog==4.0.0
 mtcnn
 Tensorflow==2.17.0
+pytube==15.0.0
+
