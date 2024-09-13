@@ -8,8 +8,8 @@ def run_app1():
     from PIL import Image
     import pickle
     from keras.utils import img_to_array
-    import sys
-    sys.path.append('web-streamlit/Diemdanh')
+    # import sys
+    # sys.path.append('web-streamlit/Diemdanh')
     from Diemdanh import facenet_architecture
     #from facenet_architecture import InceptionResNetV2
     from Diemdanh import create_embedding
@@ -31,9 +31,9 @@ def run_app1():
     @st.cache_resource
     def load_model_and_classifier():
         facenet = facenet_architecture.InceptionResNetV2()
-        path = "Diemdanh/model/facenet_keras.h5"
+        path = 'Diemdanh/model/facenet_keras.h5'
         facenet.load_weights(path)
-        file_name = "Diemdanh/model/classify.sav"
+        file_name = 'Diemdanh/model/classify.sav'
         loaded_model = pickle.load(open(file_name, "rb"))
         return facenet, loaded_model
 
@@ -180,7 +180,7 @@ def run_app1():
             if st.button("Stop Video"):
                 video_active = False
     elif option == "Automatic Attendance Excel":
-        st.image("Diemdanh/Exceldiemdanh.png", caption="Automatic check attendance into Excel file")
+        st.image('Diemdanh/Exceldiemdanh.png', caption="Automatic check attendance into Excel file")
     else:
         st.error("Please select a valid choice!")
     
