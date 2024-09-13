@@ -61,7 +61,7 @@ VIDEOS_DICT = {
 
 # ML Model config
 #ROOT = Path('D:/NCKH2023-2024/Monitoring Student/Attendance/YOLO')
-MODEL_DIR = ROOT / 'weights'
+MODEL_DIR = ROOT / 'YOLO/weights'
 DETECTION_MODEL = MODEL_DIR / 'best.pt'
 # In case of your custome model comment out the line above and
 # Place your custom model pt file name at the line below 
