@@ -186,7 +186,7 @@
 
 
 
-ef run_app1():  
+def run_app1():  
     import cv2
     import streamlit as st
     import numpy as np
