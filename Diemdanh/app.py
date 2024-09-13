@@ -206,7 +206,7 @@ def run_app1():
         '22070018': {'name': 'Doan Thi Phuong Thao', 'class': 'BEL2022C', 'email': '22070018@vnu.edu.vn'},
         '22070154': {'name': 'Pham Anh Phuong', 'class': 'AIT2022B', 'email': '22070154@vnu.edu.vn'},
         '22070156': {'name': 'Nguyen Khac Truong', 'class': 'AAI2022A', 'email': '22070156@vnu.edu.vn'},
-        '22070167': {'name': 'Nguyen Khac Trung', 'class': 'AIT2022B', 'email': '22070167@vnu.edu.vn'},
+        '22070167': {'name': 'Nguyen Ngoc Trung', 'class': 'AIT2022B', 'email': '22070167@vnu.edu.vn'},
         '22070277': {'name': 'Nguyen Khac Ton', 'class': 'AAI2022A', 'email': '22070277@vnu.edu.vn'}
     }
     
