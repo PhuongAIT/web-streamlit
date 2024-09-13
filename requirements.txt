@@ -5,6 +5,7 @@
 
 
 
+
 # Streamlit dependencies
 streamlit==1.32.2
 altair==5.2.0
@@ -20,9 +21,11 @@ opencv-python-headless==4.9.0.80
 
 # Machine Learning and Computer Vision libraries
 opencv-python==4.9.0.80  # Latest version of OpenCV for compatibility
-scikit-learn  # Latest version compatible with streamlit and numpy
+scikit-learn==1.0.2  # Latest version compatible with streamlit and numpy
 Cython==0.29.24
-tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
+#tensorflow==2.9.0  # Keeping the version as provided in Diemdanh
+
+tensorflow==2.16.1
 
 # Face recognition and YOLO libraries
 mtcnn==0.1.1  # No specific version given, this is a stable version for face detection
